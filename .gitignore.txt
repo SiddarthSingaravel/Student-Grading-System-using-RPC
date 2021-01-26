@@ -1,0 +1,5 @@
+.py
+.php
+.docx
+.pptx
+.html
