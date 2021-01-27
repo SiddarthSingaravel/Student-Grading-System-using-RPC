@@ -11,17 +11,17 @@ A real time scenario where a student enter his WIN-SEM marks for five subjects a
 
 ## Language/Tools used
 - [x] Ubuntu 14.04.6 LTS
-* C
-* RPCGEN
-* Oracle VM VirtualBox
+- [x] C
+- [x] RPCGEN
+- [x] Oracle VM VirtualBox
 
 ## Installation:
 1. Download ubuntu version 14.04.6 LTS and install on your VM VirtualBox.
 2. Type `sudo apt-get install rpcbind ` in your ubuntu terminal.
 3. Locate the RPC folder and paste the grade.x file.
-4. Navigate to the RPC folder in terminal and type ***rpcgen -a -C grade.x*** to compile the above file.
-5. Type ***make -f Makefile.grade*** to compile the newly created files and to generate additional files(server and the client ones).
-6. Open another terminal and type ***sudo ./grade_server*** to start the server and type ***sudo ./grade_client localhost*** on the other.
+4. Navigate to the RPC folder in terminal and type `rpcgen -a -C grade.x` to compile the above file.
+5. Type `make -f Makefile.grade` to compile the newly created files and to generate additional files(server and the client ones).
+6. Open another terminal and type `sudo ./grade_server` to start the server and type `sudo ./grade_client localhost` on the other.
 7. The above steps can be followed for the ***subtraction*** and ***factorial*** too.
 8. Input the mark values for each subject where these ***parameter*** values are passed and calls the remote method.
 9. The result is returned by the server method and the result is printed on the *client side*.
@@ -34,8 +34,9 @@ A real time scenario where a student enter his WIN-SEM marks for five subjects a
 ![](images/result.JPG)
 
 ## Challenges
-1. RPC Runtime: RPC run-time system is a library of routines and a set of services that handle the network communications that underlie the RPC mechanism. In the course of an RPC call, client-side and server-side run-time systems’ code handle binding, establish communications over an appropriate protocol, pass call data between the client and server, and handle communications errors.
-2. Binding: How does the client know who to call, and where the service resides?
+1. **RPC Runtime**: RPC run-time system is a library of routines and a set of services that handle the network communications that underlie the RPC mechanism. In the course of an RPC call, client-side and server-side run-time systems’ code handle binding, establish communications over an appropriate protocol, pass call data between the client and server, and handle communications errors.
+2. **Binding**: How does the client know who to call, and where the service resides?
 
 ## Thanks
 ***[Jay Kishor Pal](https://www.linkedin.com/in/jay-kishor-pal-57105217a/)***
+ 
