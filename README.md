@@ -10,14 +10,14 @@ A real time scenario where a student enter his WIN-SEM marks for five subjects a
 * Reduces *space complexity* as one method stored in one place i.e, server method can be executed by large number of clients.
 
 ## Language/Tools used
-* Ubuntu 14.04.6 LTS
+- [x] Ubuntu 14.04.6 LTS
 * C
 * RPCGEN
 * Oracle VM VirtualBox
 
 ## Installation:
 1. Download ubuntu version 14.04.6 LTS and install on your VM VirtualBox.
-2. Type ***sudo apt-get install rpcbind*** in your ubuntu terminal.
+2. Type `sudo apt-get install rpcbind ` in your ubuntu terminal.
 3. Locate the RPC folder and paste the grade.x file.
 4. Navigate to the RPC folder in terminal and type ***rpcgen -a -C grade.x*** to compile the above file.
 5. Type ***make -f Makefile.grade*** to compile the newly created files and to generate additional files(server and the client ones).
